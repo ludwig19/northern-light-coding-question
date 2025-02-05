@@ -104,7 +104,6 @@ class TestXorMerge(unittest.TestCase):
                     "date\n"]
         self.write_to_file(self.file1, content1)
         self.write_to_file(self.file2, content2)
-        breakpoint()
         xor_merge(self.file1.name, self.file2.name)
 
         self.assertEqual(self.read_output(self.out1), ['apple\n'])
