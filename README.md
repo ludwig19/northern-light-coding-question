@@ -6,3 +6,23 @@ Please create Python code which will take two input files, both files consist of
 * same logic for line1 to output1
 * time complexity: Since we're iterating over every line exactly 1 time we will have a complexity of O(N)
 * space complexity: since we only read records 1 row at a time the space will be O(1)
+
+### To Test
+Unit tests have been added to this code, to test the code against the unit tests, run:
+```bash
+python unittests.py
+```
+The function is set up to also manually accept input as well. I used the `argparse` function from the python library to simplify input. Here is the help for the file. 
+```bash
+python xor_merge.py [-h] file1 file2
+```
+```
+usage: xor_merge.py [-h] file1 file2
+
+positional arguments:
+  file1       Name of first file
+  file2       Name of second file
+
+options:
+  -h, --help  show this help message and exit
+```
